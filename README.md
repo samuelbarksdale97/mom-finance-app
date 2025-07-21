@@ -2,38 +2,31 @@
 
 A simple, user-friendly finance tracking application designed for easy expense categorization.
 
-## Project Structure
+## Features
 
-The main application is in the `app/` directory. All development should be done there.
+- Firebase Authentication & Firestore integration
+- CSV/XLSX file upload with duplicate detection
+- Transaction categorization with "Save & Exit" functionality  
+- Dashboard with budget bucket visualization
+- Tailwind CSS styling with warm, accessible design
 
 ## Getting Started
 
-1. **Navigate to the app directory:**
-   ```bash
-   cd app
-   ```
-
-2. **Install dependencies (if not already done):**
+1. **Install dependencies:**
    ```bash
    npm install
    ```
 
-3. **Run the development server:**
+2. **Run the development server:**
    ```bash
    npm run dev
    ```
 
-4. **Open your browser:**
+3. **Open your browser:**
    - Go to http://localhost:3000
    - Test Firebase setup: http://localhost:3000/test-firebase
 
-## Important Notes
-
-- Always run commands from the `app/` directory
-- The `.env.local` file with Firebase credentials is already configured
-- Firebase security rules are in `app/firestore.rules`
-
-## Available Scripts (run from app/ directory)
+## Available Scripts
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
@@ -42,4 +35,4 @@ The main application is in the `app/` directory. All development should be done 
 
 ## Firebase Setup
 
-See `app/FIREBASE_SETUP.md` for detailed Firebase configuration instructions.
+The app is configured with Firebase Authentication and Firestore. See `FIREBASE_SETUP.md` for detailed configuration instructions.
