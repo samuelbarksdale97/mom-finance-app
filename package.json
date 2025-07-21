@@ -1,0 +1,43 @@
+{
+  "name": "mom-finance-app",
+  "version": "1.0.0",
+  "description": "Simple finance tracking app with buckets",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tanstack/react-query": "^5.83.0",
+    "@types/node": "^24.0.15",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@types/xlsx": "^0.0.35",
+    "autoprefixer": "^10.4.21",
+    "clsx": "^2.1.1",
+    "eslint": "^9.31.0",
+    "eslint-config-next": "^15.4.2",
+    "firebase": "^12.0.0",
+    "lucide-react": "^0.525.0",
+    "next": "^15.4.2",
+    "papaparse": "^5.5.3",
+    "postcss": "^8.5.6",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-dropzone": "^14.3.8",
+    "react-firebase-hooks": "^5.1.1",
+    "react-hot-toast": "^2.5.2",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.8.3",
+    "xlsx": "^0.18.5",
+    "zustand": "^5.0.6"
+  },
+  "devDependencies": {
+    "@types/papaparse": "^5.3.16"
+  }
+}

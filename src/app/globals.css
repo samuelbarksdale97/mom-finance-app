@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Warm, welcoming base styles */
+  html {
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-gradient-to-br from-orange-50 via-amber-50 to-green-50 text-gray-800 leading-relaxed min-h-screen;
+  }
+  
+  /* Soft, welcoming focus states */
+  *:focus {
+    @apply outline-none ring-4 ring-green-300 ring-opacity-60;
+  }
+  
+  /* Large click targets for confidence */
+  button, a {
+    @apply min-h-[56px] min-w-[56px];
+  }
+
+  /* Smooth, calming transitions */
+  * {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  /* Mobile optimizations */
+  @media (max-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+}
+
+@layer components {
+  /* Warm, friendly button styles */
+  .btn-primary {
+    @apply bg-gradient-to-r from-green-500 to-green-600 
+           text-white px-8 py-4 rounded-2xl font-semibold text-lg
+           hover:from-green-600 hover:to-green-700 
+           hover:shadow-xl hover:scale-[1.05] hover:-translate-y-1
+           focus:ring-4 focus:ring-green-300 focus:ring-opacity-60
+           disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100
+           shadow-lg transform transition-all duration-300 ease-out;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-gray-700 px-8 py-4 rounded-2xl font-semibold text-lg border-2 border-gray-300
+           hover:bg-amber-50 hover:border-green-300 hover:shadow-lg hover:scale-[1.02]
+           focus:ring-4 focus:ring-green-300 focus:ring-opacity-60
+           disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100
+           shadow-md transform transition-all duration-300 ease-out;
+  }
+  
+  .btn-danger {
+    @apply bg-gradient-to-r from-orange-400 to-orange-500 
+           text-white px-8 py-4 rounded-2xl font-semibold text-lg
+           hover:from-orange-500 hover:to-orange-600 hover:shadow-xl hover:scale-[1.05]
+           focus:ring-4 focus:ring-orange-300 focus:ring-opacity-60
+           disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100
+           shadow-lg transform transition-all duration-300 ease-out;
+  }
+  
+  /* Warm, welcoming card styles */
+  .card {
+    @apply bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl border border-amber-200 p-8
+           hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 ease-out;
+  }
+  
+  .card-warm {
+    @apply bg-gradient-to-br from-amber-50/80 via-orange-50/60 to-green-50/80 backdrop-blur-sm
+           rounded-3xl shadow-xl border border-amber-200 p-8
+           hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 ease-out;
+  }
+  
+  /* Friendly input styles */
+  .input {
+    @apply w-full px-6 py-4 text-lg border-2 border-amber-200 rounded-2xl
+           bg-white/80 focus:border-green-400 focus:bg-green-50/50
+           focus:ring-4 focus:ring-green-300 focus:ring-opacity-40
+           disabled:bg-gray-100 disabled:cursor-not-allowed
+           shadow-md transition-all duration-300 ease-out;
+  }
+  
+  /* Welcoming headings */
+  .heading-welcome {
+    @apply text-4xl sm:text-5xl font-bold leading-tight;
+    background: linear-gradient(135deg, #059669, #10b981, #34d399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
+  }
+  
+  .heading-section {
+    @apply text-2xl sm:text-3xl font-semibold text-gray-700 leading-relaxed;
+  }
+  
+  /* Progress indicators */
+  .progress-bar {
+    @apply w-full bg-amber-200 rounded-full h-6 overflow-hidden shadow-inner;
+  }
+  
+  .progress-fill {
+    @apply h-full bg-gradient-to-r from-green-400 to-green-500 
+           rounded-full transition-all duration-500 ease-out
+           shadow-sm;
+  }
+  
+  /* Special decorative elements */
+  .icon-badge {
+    @apply w-20 h-20 rounded-full flex items-center justify-center shadow-lg
+           transform transition-all duration-300 ease-out hover:scale-110;
+  }
+  
+  .step-number {
+    @apply w-12 h-12 bg-green-100 rounded-full flex items-center justify-center 
+           text-green-600 font-bold text-lg shadow-md;
+  }
+}
